@@ -34,7 +34,7 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
     public void configureMessageBroker(MessageBrokerRegistry registry) {
         // 这句话表示在topic和user这两个域上可以向客户端发消息。
         registry.enableSimpleBroker("/topic","/user");
-        // 这句话表示客户单向服务器端发送时的主题上面需要加"/app"作为前缀。
+        // 这句话表示客户 单向 服务器端发送时的主题上面需要加"/app"作为前缀。
         registry.setApplicationDestinationPrefixes("/app");
         // 这句话表示给指定用户发送一对一的主题前缀是"/user"
         registry.setUserDestinationPrefix("/user");

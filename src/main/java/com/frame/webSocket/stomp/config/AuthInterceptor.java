@@ -1,7 +1,6 @@
 package com.frame.webSocket.stomp.config;
 
 
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.*;
